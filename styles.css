@@ -1,0 +1,103 @@
+body {
+    background-color: #2d87d1;
+
+
+
+}
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    width: 350px;
+    height: 350px;
+    border: 8px solid rgb(18, 37, 61);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%;
+    grid-area: main;
+}
+
+.grid-item {
+    width: auto;
+    height: auto;
+    background-color: rgba(217, 233, 251, 0.8);
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageCell {
+    position: absolute;
+    width: 6%;
+    height: 12%;
+}
+
+h1 {
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    margin-top: 5%;
+    font-family: 'Times New Roman';
+    padding: 5px;
+    border-radius: 10px;
+    color: rgba(217, 233, 251, 0.8);
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(18, 37, 61);
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    position: absolute;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  bottom: 78%;
+  left: 50%; 
+
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+  width: 160px;
+  background-color: rgb(18, 37, 61);
+  color: rgba(217, 233, 251, 0.8);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0 0;
+  position: absolute;
+  
+  
+  font-family: 'Times New Roman';
+  
+  }
+  
+ 
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
